@@ -39,14 +39,15 @@ $ npm run test:cov
 ## Prepare Project
 
 - You should have docker installed and Running
-- The node verison used is 20.10.0
+- The node version used is 20.10.0
 - Run ```npm install```
-- Run ```docker compose  -f "docker-compose.yml" up -d --build postgres```
+- Run ```docker compose  -f "docker-compose.yml" up -d --build Postgres```
 - Run ```npx prisma migrate dev --name init``` to setup the database
+- Create ```.env``` file from ```.env Copy```
 - Run ```npm run start:dev```
 
 ## Todo
 
-- Add Authintaction and authrization
+- Add Authentication and authrization
 - Allow the user to create more lists per board
-- Fully activate the history rehistry of the tickets updates
+- Fully activate the history registry of the ticket updates
